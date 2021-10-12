@@ -1,38 +1,115 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+ 
+}
+ 
 .App {
   text-align: center;
+  /* background-color: #dddddd; */
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ 
+header .title{
+  color: rgb(255, 255, 255);
+  background-color: #fab700;
+  padding: 0.5rem 1.25rem;
+  height: 64px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-left: 30px;
+ 
+}
+ 
+.caja {
+  /* align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; */
+  /*padding-left: 30px;*/
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 21.97px;
+    /* align-items: center; */
+  padding: 0 0 30px 0;
+  margin-top: 50px;
+}
+ 
+ 
+.opciones {
+  width: 300px;
+  margin-top: 200px;
+}
+ 
+.selector {
+  background-color: #353535;
+  padding: 10px;
+  width: 70%;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+ 
+input {
+  width: 70%;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  border: 1px solid #353535;
+}
+ 
+ 
+ 
+.exportar{
+    width: 40%;
+    background:#faa200;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+.exportar:hover {
+  /*box-shadow: 1px 1px 10px #fab700;*/
+  background-color: #353535;
+}
+ 
+.meme span {
+  font-size: 38px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
   color: white;
+  position: absolute;
+  text-align: center;
+  left: 0;
+  width: 100%;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-top: 430px;
+  left: 180px;
 }
-
-.App-link {
-  color: #61dafb;
+ 
+.meme span:nth-child(1) {
+  margin-top: 40px;
+  left: 180px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ 
+.meme img {
+  width: 500px;
+ 
+}
+ 
+footer{
+  background-color: #353535;
+  color: white;
+  font-size: 10px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
